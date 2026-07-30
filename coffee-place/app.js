@@ -1,7 +1,8 @@
 const navLinks = document.querySelectorAll(".nav-menu .nav-link")
 const menuOpenBtn = document.querySelector("#menu-open-button")
 const menuCloseBtn = document.querySelector("#menu-close-button")
-
+// const Submit = document.querySelector(".submit-button")
+const formContact = document.querySelectorAll(".contact-form")
 
 menuOpenBtn.addEventListener("click" , () => {
     // Toggle mobile menu visibility
@@ -48,3 +49,7 @@ const swiper = new Swiper('.slider-wrapper', {
     }
   }
 });
+
+formContact.addEventListener("submit", () => {
+  formContact.reset();
+})
